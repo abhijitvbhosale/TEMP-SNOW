@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="rewards" max_length="40" name="x_21186_vacation_p_rewards" type="collection">
+        <element attributes="pdf_cell_type=image" display="true" label="Image" max_length="40" name="image" type="user_image"/>
+        <element label="Name" max_length="40" name="name" type="string"/>
+    </element>
+</database>

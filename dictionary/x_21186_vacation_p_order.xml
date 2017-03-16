@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Order" max_length="40" name="x_21186_vacation_p_order" type="collection">
+        <element label="Address" max_length="255" name="address" type="string_full_utf8"/>
+        <element attributes="edge_encryption_enabled=true" label="Category" max_length="40" name="category" type="string"/>
+        <element attributes="pdf_cell_type=image" label="Image" max_length="40" name="image" type="user_image"/>
+        <element label="Order ID" max_length="255" name="order_id" type="string_full_utf8"/>
+        <element label="requested by" max_length="32" name="requested_by" reference="sys_user" type="reference"/>
+        <element label="requested For" max_length="32" name="requested_for" reference="sys_user" type="reference"/>
+        <element choice="1" label="State" max_length="40" name="state" type="choice">
+            <choice/>
+        </element>
+        <index name="index">
+            <element name="requested_by"/>
+        </index>
+        <index name="index2">
+            <element name="requested_for"/>
+        </index>
+    </element>
+</database>

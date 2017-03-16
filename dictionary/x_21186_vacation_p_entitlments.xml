@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Performance" max_length="40" name="x_21186_vacation_p_entitlments" type="collection">
+        <element label="1 Day Ticket" max_length="255" name="1_day_ticket" type="string_full_utf8"/>
+        <element label="Annual Pass" max_length="255" name="annual_pass" type="string_full_utf8"/>
+        <element label="Average Days" max_length="255" name="average_days" type="string_full_utf8"/>
+        <element label="Average Point Per Ticket" max_length="255" name="average_point_per_ticket" type="string_full_utf8"/>
+        <element label="Current Level" max_length="255" name="current_level" type="string_full_utf8"/>
+        <element label="Fun" max_length="255" name="fun" type="string_full_utf8"/>
+        <element label="Goal" max_length="255" name="goal" type="string_full_utf8"/>
+        <element label="Location" max_length="32" name="location" reference="cmn_location" type="reference"/>
+        <element label="Member" max_length="32" name="member" reference="x_21186_vacation_p_member" reference_key="user" type="reference"/>
+        <element label="Multi Day ticket" max_length="255" name="multi_day_ticket" type="string_full_utf8"/>
+        <element label="No Expiration" max_length="255" name="no_expiration" type="string_full_utf8"/>
+        <element label="park hopper" max_length="255" name="park_hopper" type="string_full_utf8"/>
+        <element label="percent to goal" max_length="255" name="percent_to_goal" type="string_full_utf8"/>
+        <element label="volume" max_length="255" name="volume" type="string_full_utf8"/>
+        <index name="index">
+            <element name="member"/>
+        </index>
+        <index name="index2">
+            <element name="location"/>
+        </index>
+    </element>
+</database>

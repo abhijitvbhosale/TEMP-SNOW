@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Product" max_length="40" name="x_21186_vacation_p_product" type="collection">
+        <element display="true" label="Category" max_length="40" name="category" type="string"/>
+        <element label="image" max_length="40" name="image" type="user_image"/>
+    </element>
+</database>

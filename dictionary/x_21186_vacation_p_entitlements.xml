@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Entitlements" max_length="40" name="x_21186_vacation_p_entitlements" type="collection">
+        <element label="Comments" max_length="4000" name="comments" type="journal"/>
+        <element label="Entitlement Name" max_length="255" name="entitlement_name" type="string_full_utf8"/>
+        <element label="Expiration Date" max_length="255" name="expiration_date" type="string_full_utf8"/>
+        <element label="ID" max_length="255" name="id" type="string_full_utf8"/>
+        <element label="Level" max_length="255" name="level" type="string_full_utf8"/>
+        <element label="Link" max_length="65536" name="link" type="translated_html"/>
+        <element label="Member" max_length="32" name="member" reference="x_21186_vacation_p_member" type="reference"/>
+        <element label="Order" max_length="1024" name="order" reference="sc_req_item" type="reference"/>
+        <element default="/com.glideapp.servicecatalog_cat_item_view.do?sysparm_id=5c54edc24f63620067007e918110c716" label="order Now" max_length="1024" name="order_now" type="url"/>
+        <element label="Split?" max_length="255" name="split" type="string_full_utf8"/>
+        <index name="index">
+            <element name="member"/>
+        </index>
+    </element>
+</database>

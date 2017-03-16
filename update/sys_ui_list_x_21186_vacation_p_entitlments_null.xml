@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_ui_list parent="" relationship="" sys_domain="global" table="x_21186_vacation_p_entitlments" version="2" view="">
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>1_day_ticket</element>
+            <list_id display_value="x_21186_vacation_p_entitlments" element="NULL" name="x_21186_vacation_p_entitlments" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">2418f4654f33220067007e918110c75f</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>0</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2016-12-19 15:42:51</sys_created_on>
+            <sys_id>2818f4654f33220067007e918110c75f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2016-12-19 15:42:51</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>annual_pass</element>
+            <list_id display_value="x_21186_vacation_p_entitlments" element="NULL" name="x_21186_vacation_p_entitlments" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">2418f4654f33220067007e918110c75f</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>1</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2016-12-19 15:42:51</sys_created_on>
+            <sys_id>a818f4654f33220067007e918110c75f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2016-12-19 15:42:51</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>average_days</element>
+            <list_id display_value="x_21186_vacation_p_entitlments" element="NULL" name="x_21186_vacation_p_entitlments" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">2418f4654f33220067007e918110c75f</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>2</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2016-12-19 15:42:51</sys_created_on>
+            <sys_id>2c18f4654f33220067007e918110c75f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2016-12-19 15:42:51</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>average_point_per_ticket</element>
+            <list_id display_value="x_21186_vacation_p_entitlments" element="NULL" name="x_21186_vacation_p_entitlments" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">2418f4654f33220067007e918110c75f</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>3</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2016-12-19 15:42:51</sys_created_on>
+            <sys_id>ac18f4654f33220067007e918110c75f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2016-12-19 15:42:51</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>current_level</element>
+            <list_id display_value="x_21186_vacation_p_entitlments" element="NULL" name="x_21186_vacation_p_entitlments" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">2418f4654f33220067007e918110c75f</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>4</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2016-12-19 15:42:51</sys_created_on>
+            <sys_id>2018f4654f33220067007e918110c760</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2016-12-19 15:42:51</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>fun</element>
+            <list_id display_value="x_21186_vacation_p_entitlments" element="NULL" name="x_21186_vacation_p_entitlments" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">2418f4654f33220067007e918110c75f</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>5</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2016-12-19 15:42:51</sys_created_on>
+            <sys_id>a018f4654f33220067007e918110c760</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2016-12-19 15:42:51</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>goal</element>
+            <list_id display_value="x_21186_vacation_p_entitlments" element="NULL" name="x_21186_vacation_p_entitlments" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">2418f4654f33220067007e918110c75f</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>6</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2016-12-19 15:42:51</sys_created_on>
+            <sys_id>2418f4654f33220067007e918110c760</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2016-12-19 15:42:51</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>location</element>
+            <list_id display_value="x_21186_vacation_p_entitlments" element="NULL" name="x_21186_vacation_p_entitlments" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">2418f4654f33220067007e918110c75f</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>7</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2016-12-19 15:42:51</sys_created_on>
+            <sys_id>a418f4654f33220067007e918110c760</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2016-12-19 15:42:51</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>member</element>
+            <list_id display_value="x_21186_vacation_p_entitlments" element="NULL" name="x_21186_vacation_p_entitlments" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">2418f4654f33220067007e918110c75f</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>8</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2016-12-19 15:42:51</sys_created_on>
+            <sys_id>2818f4654f33220067007e918110c760</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2016-12-19 15:42:51</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>multi_day_ticket</element>
+            <list_id display_value="x_21186_vacation_p_entitlments" element="NULL" name="x_21186_vacation_p_entitlments" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">2418f4654f33220067007e918110c75f</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>9</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2016-12-19 15:42:51</sys_created_on>
+            <sys_id>a818f4654f33220067007e918110c760</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2016-12-19 15:42:51</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>u_location_performance.annual_pass</element>
+            <list_id display_value="x_21186_vacation_p_entitlments" element="NULL" name="x_21186_vacation_p_entitlments" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">2418f4654f33220067007e918110c75f</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>10</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2016-12-19 15:42:51</sys_created_on>
+            <sys_id>2c18f4654f33220067007e918110c760</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2016-12-19 15:42:51</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>u_location_performance.average_days</element>
+            <list_id display_value="x_21186_vacation_p_entitlments" element="NULL" name="x_21186_vacation_p_entitlments" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">2418f4654f33220067007e918110c75f</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>11</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2016-12-19 15:42:51</sys_created_on>
+            <sys_id>ac18f4654f33220067007e918110c760</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2016-12-19 15:42:51</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>u_location_performance.average_point_per_ticket</element>
+            <list_id display_value="x_21186_vacation_p_entitlments" element="NULL" name="x_21186_vacation_p_entitlments" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">2418f4654f33220067007e918110c75f</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>12</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2016-12-19 15:42:51</sys_created_on>
+            <sys_id>2018f4654f33220067007e918110c761</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2016-12-19 15:42:51</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>u_location_performance.sys_created_on</element>
+            <list_id display_value="x_21186_vacation_p_entitlments" element="NULL" name="x_21186_vacation_p_entitlments" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">2418f4654f33220067007e918110c75f</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>13</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2016-12-19 15:42:51</sys_created_on>
+            <sys_id>a018f4654f33220067007e918110c761</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2016-12-19 15:42:51</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>u_location_performance.sys_created_by</element>
+            <list_id display_value="x_21186_vacation_p_entitlments" element="NULL" name="x_21186_vacation_p_entitlments" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">2418f4654f33220067007e918110c75f</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>14</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2016-12-19 15:42:51</sys_created_on>
+            <sys_id>2418f4654f33220067007e918110c761</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2016-12-19 15:42:51</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>u_location_performance.current_level</element>
+            <list_id display_value="x_21186_vacation_p_entitlments" element="NULL" name="x_21186_vacation_p_entitlments" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">2418f4654f33220067007e918110c75f</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>15</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2016-12-19 15:42:51</sys_created_on>
+            <sys_id>a418f4654f33220067007e918110c761</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2016-12-19 15:42:51</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>u_location_performance.fun</element>
+            <list_id display_value="x_21186_vacation_p_entitlments" element="NULL" name="x_21186_vacation_p_entitlments" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">2418f4654f33220067007e918110c75f</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>16</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2016-12-19 15:42:51</sys_created_on>
+            <sys_id>2818f4654f33220067007e918110c761</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2016-12-19 15:42:51</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>u_location_performance.goal</element>
+            <list_id display_value="x_21186_vacation_p_entitlments" element="NULL" name="x_21186_vacation_p_entitlments" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">2418f4654f33220067007e918110c75f</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>17</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2016-12-19 15:42:51</sys_created_on>
+            <sys_id>a818f4654f33220067007e918110c761</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2016-12-19 15:42:51</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>u_location_performance.location</element>
+            <list_id display_value="x_21186_vacation_p_entitlments" element="NULL" name="x_21186_vacation_p_entitlments" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">2418f4654f33220067007e918110c75f</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>18</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2016-12-19 15:42:51</sys_created_on>
+            <sys_id>2c18f4654f33220067007e918110c761</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2016-12-19 15:42:51</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>u_location_performance.u_location_performance</element>
+            <list_id display_value="x_21186_vacation_p_entitlments" element="NULL" name="x_21186_vacation_p_entitlments" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">2418f4654f33220067007e918110c75f</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>19</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2016-12-19 15:42:51</sys_created_on>
+            <sys_id>ac18f4654f33220067007e918110c761</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2016-12-19 15:42:51</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>u_location_performance.member</element>
+            <list_id display_value="x_21186_vacation_p_entitlments" element="NULL" name="x_21186_vacation_p_entitlments" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">2418f4654f33220067007e918110c75f</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>20</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2016-12-19 15:42:51</sys_created_on>
+            <sys_id>2018f4654f33220067007e918110c762</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2016-12-19 15:42:51</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>u_location_performance.multi_day_ticket</element>
+            <list_id display_value="x_21186_vacation_p_entitlments" element="NULL" name="x_21186_vacation_p_entitlments" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">2418f4654f33220067007e918110c75f</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>21</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2016-12-19 15:42:51</sys_created_on>
+            <sys_id>a018f4654f33220067007e918110c762</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2016-12-19 15:42:51</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>u_location_performance.no_expiration</element>
+            <list_id display_value="x_21186_vacation_p_entitlments" element="NULL" name="x_21186_vacation_p_entitlments" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">2418f4654f33220067007e918110c75f</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>22</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2016-12-19 15:42:51</sys_created_on>
+            <sys_id>2418f4654f33220067007e918110c762</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2016-12-19 15:42:51</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element/>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <name>x_21186_vacation_p_entitlments</name>
+            <parent/>
+            <position/>
+            <relationship/>
+            <sum>false</sum>
+            <sys_class_name>sys_ui_list</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2016-12-19 15:42:51</sys_created_on>
+            <sys_customer_update>true</sys_customer_update>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>2418f4654f33220067007e918110c75f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_21186_vacation_p_entitlments</sys_name>
+            <sys_package display_value="vacation planner" source="x_21186_vacation_p">ee4515034f03220067007e918110c7d9</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="vacation planner">ee4515034f03220067007e918110c7d9</sys_scope>
+            <sys_update_name>sys_ui_list_x_21186_vacation_p_entitlments_null</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2016-12-19 15:42:51</sys_updated_on>
+            <sys_user/>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_list>
+    </sys_ui_list>
+</record_update>

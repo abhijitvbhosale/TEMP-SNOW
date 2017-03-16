@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sc_cat_item_category">
+    <sc_cat_item_category action="INSERT_OR_UPDATE">
+        <sc_cat_item display_value="Tier 2 - Gold">86cf08804fffa20067007e918110c719</sc_cat_item>
+        <sc_category display_value="Gift Cards">528f40084fffa20067007e918110c754</sc_category>
+        <sys_class_name>sc_cat_item_category</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2016-12-19 17:26:19</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>c8cf89e94f33220067007e918110c75c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Gift Cards.Tier 2 - Gold</sys_name>
+        <sys_package display_value="vacation planner" source="x_21186_vacation_p">ee4515034f03220067007e918110c7d9</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="vacation planner">ee4515034f03220067007e918110c7d9</sys_scope>
+        <sys_update_name>sc_cat_item_category_c8cf89e94f33220067007e918110c75c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2016-12-19 17:26:19</sys_updated_on>
+    </sc_cat_item_category>
+</record_update>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sp_instance_vlist">
+    <sp_instance_vlist action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <class_name/>
+        <color>success</color>
+        <css/>
+        <display_field>entitlement_name</display_field>
+        <field_list>link,order,order_now,split</field_list>
+        <filter/>
+        <glyph>globe</glyph>
+        <id/>
+        <maximum_entries>5</maximum_entries>
+        <order>0</order>
+        <order_by/>
+        <order_direction>asc</order_direction>
+        <short_description/>
+        <size>md</size>
+        <sp_column display_value="2">ccea29464f63620067007e918110c7cd</sp_column>
+        <sp_page display_value="form">ed5f8ec347730200ba13a5554ee49046</sp_page>
+        <sp_widget display_value="Copy of Simple List">dea6b9c14f63220067007e918110c7e5</sp_widget>
+        <sys_class_name>sp_instance_vlist</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2016-12-08 22:26:41</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>340b2d464f63620067007e918110c79d</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name>My Entitlement</sys_name>
+        <sys_package display_value="vacation planner" source="x_21186_vacation_p">ee4515034f03220067007e918110c7d9</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="vacation planner">ee4515034f03220067007e918110c7d9</sys_scope>
+        <sys_update_name>sp_instance_vlist_340b2d464f63620067007e918110c79d</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2016-12-14 18:25:15</sys_updated_on>
+        <table>x_21186_vacation_p_entitlements</table>
+        <title>My Entitlement</title>
+        <url/>
+        <widget_parameters><![CDATA[{
+	"always_show": {
+		"value": "",
+		"displayValue": ""
+	},
+	"panel_body_height": {
+		"value": "",
+		"displayValue": ""
+	},
+	"image_field": {
+		"value": "",
+		"displayValue": ""
+	},
+	"secondary_fields": {
+		"value": "level,order_now,link",
+		"displayValue": "level,order_now,link"
+	},
+	"rounded_images": {
+		"value": "false",
+		"displayValue": "false"
+	},
+	"list_page": {
+		"value": "9f12251147132100ba13a5554ee490f4",
+		"displayValue": "sc_cat_item"
+	},
+	"hide_footer": {
+		"value": "",
+		"displayValue": ""
+	},
+	"view": {
+		"value": "",
+		"displayValue": ""
+	}
+}]]></widget_parameters>
+    </sp_instance_vlist>
+</record_update>

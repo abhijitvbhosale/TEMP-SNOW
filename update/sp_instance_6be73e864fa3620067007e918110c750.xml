@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sp_instance">
+    <sp_instance action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <class_name/>
+        <color>default</color>
+        <css>.btn-default { &#13;
+color: #ffffff;&#13;
+  background-color: #7cb130;&#13;
+  border-color: #6e9d2b;&#13;
+  display: inline-block;&#13;
+  margin: 12px 15px;&#13;
+  text-align: center;&#13;
+  white-space: nowrap;&#13;
+  vertical-align: middle;&#13;
+  cursor: pointer;&#13;
+  border: 1px solid;&#13;
+  background-image: none;&#13;
+  border-radius: 4px;&#13;
+  font-size: 14px;&#13;
+  height: 35px;&#13;
+  padding-left: 20px;&#13;
+  padding-right: 20px;&#13;
+  min-width: 100px;&#13;
+  _:;&#13;
+  -webkit-user-select: none;&#13;
+  _:;&#13;
+  -moz-user-select: none;&#13;
+  _:; @name: none&#13;
+}</css>
+        <glyph/>
+        <id/>
+        <order>3</order>
+        <short_description/>
+        <size>md</size>
+        <sp_column display_value="2">ccea29464f63620067007e918110c7cd</sp_column>
+        <sp_widget display_value="link-button">abc50de6d702120023c84f80de61036a</sp_widget>
+        <sys_class_name>sp_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2016-12-09 04:02:44</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>6be73e864fa3620067007e918110c750</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="vacation planner" source="x_21186_vacation_p">ee4515034f03220067007e918110c7d9</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="vacation planner">ee4515034f03220067007e918110c7d9</sys_scope>
+        <sys_update_name>sp_instance_6be73e864fa3620067007e918110c750</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2016-12-13 22:06:55</sys_updated_on>
+        <title/>
+        <url/>
+        <widget_parameters><![CDATA[{
+	"href": {
+		"value": "/com.glideapp.servicecatalog_cat_item_view.do?sysparm_id=5c54edc24f63620067007e918110c716",
+		"displayValue": "/com.glideapp.servicecatalog_cat_item_view.do?sysparm_id=5c54edc24f63620067007e918110c716"
+	},
+	"button_text": {
+		"value": "Order",
+		"displayValue": "Order"
+	}
+}]]></widget_parameters>
+    </sp_instance>
+</record_update>

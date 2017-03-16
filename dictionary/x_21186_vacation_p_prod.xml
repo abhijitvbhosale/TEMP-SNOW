@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element extends="sys_import_set_row" label="prod" max_length="40" name="x_21186_vacation_p_prod" type="collection">
+        <element attributes="import_attribute_name=address,edge_encryption_enabled=true" label="address" max_length="40" name="u_address" type="string"/>
+        <element attributes="import_attribute_name=order_id,edge_encryption_enabled=true" label="order_id" max_length="40" name="u_order_id" type="string"/>
+        <element attributes="import_attribute_name=product,edge_encryption_enabled=true" label="product" max_length="40" name="u_product" type="string"/>
+        <element attributes="import_attribute_name=u_products,edge_encryption_enabled=true" label="Products" max_length="40" name="u_products" type="string"/>
+        <element attributes="import_attribute_name=requested_by,edge_encryption_enabled=true" label="requested_by" max_length="40" name="u_requested_by" type="string"/>
+        <element attributes="import_attribute_name=requested_for,edge_encryption_enabled=true" label="requested_for" max_length="40" name="u_requested_for" type="string"/>
+        <element attributes="import_attribute_name=state,edge_encryption_enabled=true" label="state" max_length="40" name="u_state" type="string"/>
+    </element>
+</database>

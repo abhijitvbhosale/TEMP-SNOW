@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sysrule_quota_app">
+    <sysrule_quota_app action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition table="v_quota_transaction">urlLIKEvacation^EQ<item endquery="false" field="url" goto="false" newquery="false" operator="LIKE" or="false" value="vacation"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </condition>
+        <description/>
+        <log_only>true</log_only>
+        <max_events>10</max_events>
+        <max_jobs/>
+        <name>My quota</name>
+        <order>100</order>
+        <sys_class_name>sysrule_quota_app</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2016-12-07 20:35:24</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>f8c7807d4feb220067007e918110c7c2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>My quota</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="vacation planner" source="x_21186_vacation_p">ee4515034f03220067007e918110c7d9</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="vacation planner">ee4515034f03220067007e918110c7d9</sys_scope>
+        <sys_update_name>sysrule_quota_app_f8c7807d4feb220067007e918110c7c2</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2016-12-07 20:35:24</sys_updated_on>
+    </sysrule_quota_app>
+</record_update>

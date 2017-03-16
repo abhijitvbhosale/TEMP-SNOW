@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>true</action_insert>
+        <action_query>false</action_query>
+        <action_update>true</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>sys_email</collection>
+        <condition>gs.getProperty('glide.email.test.group','') != ''</condition>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition table="sys_email">type=send-ready^bodyNOT LIKEglide.email.test^EQ<item endquery="false" field="type" goto="false" newquery="false" operator="=" or="false" value="send-ready"/>
+            <item endquery="false" field="body" goto="false" newquery="false" operator="NOT LIKE" or="false" value="glide.email.test"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </filter_condition>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>SubProd Email Filter</name>
+        <order>1</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[/**
+ * Created by user on 8/18/15.
+ */
+/**
+ * SubProd Email Filter
+ * This code handles checking all outgoing emails for who they're supposed to
+ * send to, and restricts it to only send to a specific group of people.
+ *
+ * This code is compatible with text notifications, and with calendar invites.
+ * This code is overridden by the glide.email.test.user property.
+ *
+ * Example Usage:
+ * On a Dev instance, to have only developers get emails.
+ *
+ * Specifically:
+ * This looks for the property "glide.email.test.group" and if it's populated
+ * it looks at all the recipients of the outbound emails, and checks to see
+ * if those email addresses or phone numbers belong to the members of the
+ * group referenced by sys_id in the property.
+ *
+ * If the user that created the record the email is about happens to be in the
+ * group, they will be added to the recipients list (to simplify testing).
+ *
+ * Note that in the code below:
+ * allowedEmails = people the email is slated to go to
+ * grpMembers = email addresses / phone numbers allowed to receive email.
+ */
+/*if(current.target_table =='incident' || current.target_table =='problem'|| current.target_table =='problem_task')
+	{
+		current.body = current.body + '<div><br/><br/><hr/></div><div>Warning: Any response to this email will be posted into CentralStation Activity Log!</div><br/>';
+	}*/
+
+//if(gs.getProperty('glide.email.test.group','') != '')
+//{
+
+if (current.type != 'received') {
+    subProdEmailFilter();
+}
+
+function subProdEmailFilter() {
+
+    var table = current.target_table;
+    var record = current.instance;
+    var recips = current.recipients;
+    var bcc = current.blind_copied;
+    var cc = current.copied;
+    var body = current.body;
+    var grpMembers = [];
+    var allowedEmails = [];
+    var allowedBCC = [];
+    var allowedCC = [];
+    var email = '';
+    var phone = '';
+    var lastUpdate = '';
+    var groupName = '';
+
+    //Grab the sys_id of the email group, and verify it's a valid group.'
+    var testGroup = gs.getProperty('glide.email.test.group','');
+
+    //If the email is not turned on, then this should not run.
+    if(testGroup == '') {
+        return false;
+    }
+    //Validate that the group exists.
+    var grp = new GlideRecord('sys_user_group');
+    if(grp.get('sys_id', testGroup)) {
+        groupName = grp.name.toString();
+    } else if(grp.get('name', testGroup)) {
+        testGroup = grp.sys_id; //Sets the groups sys_id
+        groupName = grp.name.toString();
+    }
+    else {
+        //SubProd Email Group not found, don't send any emails.
+        current.type = 'send-ignored';
+        return false;
+    }
+
+    //Look through all members of the test group, checking their email and phone.
+    var grpMember = new GlideRecord('sys_user_grmember');
+    grpMember.addQuery('group', testGroup);
+    grpMember.query();
+    var ndv;
+    while(grpMember.next()){
+		
+        //For each user, check their email
+        email = grpMember.user.email.toString();
+        if(recips.indexOf(email) >=0){
+            allowedEmails.push(grpMember.user.email.toString()); //Create an array of emails from the original recipients that are allowed to receive emails
+        }
+        if(bcc.indexOf(email) >=0){
+            allowedBCC.push(grpMember.user.email.toString()); //Create an array of emails from the original recipients that are allowed to receive emails
+        }
+        if(cc.indexOf(email) >=0){
+            allowedCC.push(grpMember.user.email.toString()); //Create an array of emails from the original recipients that are allowed to receive emails
+        }
+        grpMembers.push(grpMember.user.email.toString()); //Create an array of all test group members
+
+        //Lookup that member's notification devices, and add those to the allowed list.
+        ndv = new GlideRecord("cmn_notif_device");
+        ndv.addQuery("user", grpMember.user);
+        ndv.addQuery("email_address", "!=", email);
+        ndv.query();
+        while(ndv.next()) {
+            if(ndv.type == "SMS") {
+                phone = constructEmailAddress(ndv);
+            }
+            else
+                phone = String(ndv.email_address);
+            if(recips.indexOf(phone) >=0 && allowedEmails.toString().indexOf(phone) == -1){
+                allowedEmails.push(phone); //Add the phone number to the allowed emails list.
+            }
+            if(bcc.indexOf(phone) >=0 && allowedBCC.toString().indexOf(phone) == -1){
+                allowedBCC.push(phone); //Create an array of emails from the original recipients that are allowed to receive emails
+            }
+            if(cc.indexOf(phone) >=0 && allowedCC.toString().indexOf(phone) == -1){
+                allowedCC.push(phone); //Create an array of emails from the original recipients that are allowed to receive emails
+            }
+            grpMembers.push(phone); //Add the phone number to the group members list.
+        }
+
+    }
+
+    //Look to see who last updated the referenced record.
+    if (table) {
+        var gr = new GlideRecord(table);
+        if(gr.get(record)){
+            lastUpdate = gr.sys_updated_by;
+        }
+    }
+
+    //Check to see if the last updated user is in the current allowedEmails array and add them if they are not and valid.
+    //Only do this if there are no valid recipients.
+    if(lastUpdate && !allowedEmails){
+        var usr = new GlideRecord('sys_user');
+        usr.addQuery('user_name',lastUpdate);
+        usr.addQuery('notification',2); //Check to see if the user has notification set to "Email" which is 2.
+        usr.query();
+        if(usr.next()){
+            if(grpMembers.toString().indexOf(usr.email) >= 0){ //Are they a valid user.
+                if(allowedEmails.toString().indexOf(usr.email) == -1){ //Are they already in the allowedEmails array.
+                    allowedEmails.push(usr.email.toString());
+                }
+            }
+        }
+    }
+
+    //If the current recipients field is blank then set the text to NONE.
+    if(recips == '')
+        recips = 'NONE';
+	
+	
+
+    //DO NOT APPEND anything if this is a calendar invite. It will mess it up if you do.
+    if(body.indexOf("END:VCALENDAR") < 0) {
+        current.body = body + 'Testing mode on via system property "glide.email.test.group". Intended recipients: ' + recips + '</div><br/>';
+    }
+
+	
+    //If there are no alowed recipients then set the email to send-ignored and clear the recipients field.
+    if(allowedEmails.length == 0){
+        current.type = 'send-ignored';
+        current.recipients = '';
+    } else{
+        current.recipients = allowedEmails.toString();
+        current.blind_copied = allowedBCC.toString();
+        current.copied = allowedCC.toString();
+    }
+    return true;
+}
+
+function constructEmailAddress(device) {
+
+    var addressVar = '';
+    var current = device;
+
+    //If a construction script is to be used, evaluate it
+    if (device.service_provider.use_construction_script == true) {
+        addressVar = eval(device.service_provider.construction_script);
+
+        //If not, construct the address with the prefix, the number, and the suffix
+    } else if (device.phone_number){
+
+        if (!device.service_provider.email_prefix.nil()) {
+            addressVar += device.service_provider.email_prefix;
+        }
+
+        addressVar += device.phone_number;
+
+        if (!device.service_provider.email_suffix.nil()) {
+            addressVar += '@' + device.service_provider.email_suffix;
+        }
+    }
+    //Set the final address
+    return addressVar;
+}
+//}
+]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2017-02-02 19:56:15</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>4f91618c4fb8320067007e918110c7c3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>SubProd Email Filter</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="vacation planner" source="x_21186_vacation_p">ee4515034f03220067007e918110c7d9</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="vacation planner">ee4515034f03220067007e918110c7d9</sys_scope>
+        <sys_update_name>sys_script_4f91618c4fb8320067007e918110c7c3</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2017-02-02 19:56:15</sys_updated_on>
+        <template/>
+        <when>before</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=4f91618c4fb8320067007e918110c7c3"/>
+</record_update>

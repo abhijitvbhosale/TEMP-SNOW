@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element extends="sys_import_set_row" label="Computer" max_length="40" name="imp_computer" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="Address" max_length="40" name="u_address" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Order ID" max_length="40" name="u_order_id" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Product" max_length="40" name="u_product" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="products" max_length="40" name="u_products" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="requested by" max_length="40" name="u_requested_by" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="requested For" max_length="40" name="u_requested_for" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="State" max_length="40" name="u_state" type="string"/>
+    </element>
+</database>

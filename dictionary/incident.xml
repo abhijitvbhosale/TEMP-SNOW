@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element attributes="email_client=true,hasWorkflow=true,live_feed=true,text_index_translations" audit="true" extends="task" label="Incident" max_length="40" name="incident" sizeclass="50" text_index="true" type="collection">
+        <element label="myPhone" max_length="12" name="x_21186_vacation_p_myphone" type="wdpr_phone"/>
+    </element>
+</database>
